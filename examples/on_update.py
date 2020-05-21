@@ -4,7 +4,7 @@ import datetime
 import os
 import argparse
 sys.path.append("..")
-from atomfast-ble-driver import AtomFast
+from atomfast_ble_driver import AtomFast
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-a', '--mac', default = None)
