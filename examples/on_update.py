@@ -3,6 +3,7 @@ import struct
 import datetime
 import os
 import argparse
+import sys
 sys.path.append("..")
 from atomfast_ble_driver import AtomFast
 
