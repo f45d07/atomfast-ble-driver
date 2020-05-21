@@ -18,7 +18,7 @@ def OnUpdate(info):
 manager = gatt.DeviceManager(adapter_name='hci0')
 
 if args != None:
-    device = AtomFast(mac_address = args.name, manager = manager)
+    device = AtomFast(mac_address = args.mac, manager = manager)
     device.SetUpdateCallback(OnUpdate)
     device.connect()
     manager.run()
