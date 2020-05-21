@@ -10,7 +10,7 @@ from atomfast_ble_driver import AtomFast
 parser = argparse.ArgumentParser()
 parser.add_argument('-a', '--mac', default = None)
 
-args.name = parser.parse_args(sys.argv[1:])
+args = parser.parse_args(sys.argv[1:])
 
 def OnUpdate(info):
     print(info['dose_power'])
