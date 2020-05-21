@@ -7,7 +7,8 @@ import time
 
 class AtomFast(gatt.Device):
 
-    def __init__(self):
+    def __init__(self, mac_address, manager):
+        super().__init__(mac_address, manager)
         self.connect_callback = None
         self.update_callback = None
     
